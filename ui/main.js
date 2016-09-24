@@ -11,11 +11,11 @@ var img = document.getElementById('madi');
 var marginLeft = 0;
 
 function moveRight() {
-    marginLeft = marginLeft + 10;
+    marginLeft = marginLeft + 1;
     img.style.marginLeft = marginLeft + 'px';
 }
 
 
 img.onclick  = function() {
-    var inetrval = setInterval(moveRight, 100);
+    var inetrval = setInterval(moveRight, 50);
 };
