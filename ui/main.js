@@ -92,7 +92,7 @@ output.onCick = function() {
     
     //Making Request
     
-    var commentInput = document.getElementById('comment-box');
+    var commentInput = document.getElementById('comment');
     var comment = commentInput.value;
     request.open('GET', 'http://riya13.imad.hasura-app.io/submit-comment?comment=' + comment, true);
     request.send(null); 
