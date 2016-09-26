@@ -120,6 +120,16 @@ app.get('/counter', function (req, res) {
     res.send(counter.toString());
 });
 
+var names = [];
+app.get('/submit-name/:name', function (req, res) {
+    //Get names from the request
+    var name = req.params.name;
+    
+    names.push(name);
+    
+    res.send(JSON.stringify(names));
+});
+
 
 app.get('/:articleName', function (req, res) {
     
