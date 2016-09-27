@@ -61,7 +61,7 @@ submit.onclick = function () {
 
 //Submit and Display Comments
 var output = document.getElementById('submit-btn');
-output.onCick = function() {
+output.onClick = function() {
     
     //Create a request object
     var request = new XMLHttpRequest();
