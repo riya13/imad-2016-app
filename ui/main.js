@@ -83,7 +83,7 @@ output.onClick = function() {
                     list += '<li>' + comments[i] + '</li>';
                 }
                 
-                var ul = document.getElementById('commnentlist');
+                var ul = document.getElementById('commentlist');
                 ul.innerHTML = list;
                 
             }
