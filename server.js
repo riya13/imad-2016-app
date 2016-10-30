@@ -129,18 +129,6 @@ app.get('/submit-name', function(req, res) { // /submit-name?name=xxxx
 });
 
 
-var comments = [];
-app.get('/submit-comment' , function(req, res) {
-    
-    //Get the comments from the request
-    var comment = req.query.comment;
-    
-    comments.push(comment);
-    
-    res.send(JSON.stringify(comments));
-    
-    
-});
 
 
 
