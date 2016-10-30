@@ -80,7 +80,6 @@ app.get('/counter', function (req, res) {
 });
 
 
-
 var names = [];
 app.get('/submit-name', function(req, res) { // /submit-name?name=xxxx
   // Get the name from the request
@@ -90,7 +89,6 @@ app.get('/submit-name', function(req, res) { // /submit-name?name=xxxx
   // JSON: Javascript Object Notation
   res.send(JSON.stringify(names));
 });
-
 
 
 app.get('/articles/:articleName', function (req, res) {
