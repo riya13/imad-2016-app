@@ -101,27 +101,23 @@ app.get('/login', function() {
    var username = req.body.username;
    var password = req.body.password;
    
-   pool.query('SELECT * from "user" WHERE username= $1' , [username], function(err, result) {
-        if(err){
-           res.status(500).send(err.toString());
-       }
-       else {
-           if(result.rows.length === 0) {
-               res.send(403).send('username/password is invalid');
-            }
-            else {
-                //match the password
+  pool.query('SELECT * FROM "user" WHERE username = $1', [username], function (err, result) {
+      if (err) {
+          res.status(500).send(err.toString());
+      } else {
+          if (result.rows.length === 0) {
+              res.status(403).send('username/password is invalid');
+          } else {
+              // Match the password
+              var dbString = result.rows[0].password;
+              var salt = dbString.split('$')[2];
+              var hashedPassword = hash(password, salt); // Creating a hash based on the password submitted and the original salt
+              if (hashedPassword === dbString) {
                 
-                var dbString = result.rows[0].password;
-                var salt = dbString.split('$')[2];
-                var hashedPassword = hash(password , salt);
+                res.send('credentials correct!');
                 
-                if(hashedPassword === dbString) {
-                    res.send('credentials correct!');
-                }
-                
-                else {
-                    res.send(403).send('username/password is invalid');
+              } else {
+                res.status(403).send('username/password is invalid');
                 }
                
             }
