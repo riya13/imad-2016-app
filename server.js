@@ -155,43 +155,25 @@ app.get('/check-login', function(req, res){
 app.get('/logout', function(req, res) {
    delete req.session.auth;
    
-   res.send('<html><body>Logged Out! <br/> <hr/> <a href = />Back to Home </a></head></html>');
+   res.send('<html><body><br/> Logged Out! <br/> <hr/> <a href = />Back to Home </a></head></html>');
 });
 
 
 var pool = new Pool(config);
 
-app.get('/test-db', function(req, res) {
-   //Make a SELECT query
-   //return the response
+app.get('/get-articles', function(req, res){
    
-   pool.query('SELECT * FROM test', function(err, result){
-       if(err){
-           res.status(500).send(err.toString());
-       }
-       else {
-           res.send(JSON.stringify(result.rows));
-       }
-  });
-   
-});
-
-var counter = 0;
-app.get('/counter', function (req, res) {
-   counter = counter + 1;
-   res.send(counter.toString());
+   pool.query('SELECT * FROM article ORDER BY date DESC', function(err, result){
+      if(err){
+          res.status(500).send(err.toString());
+      } else {
+          res.send(JSON.stringify(resilt.rows));
+      }
+   });
+    
 });
 
 
-var names = [];
-app.get('/submit-name', function(req, res) { // /submit-name?name=xxxx
-  // Get the name from the request
-  var name = req.query.name;
-  
-  names.push(name);
-  // JSON: Javascript Object Notation
-  res.send(JSON.stringify(names));
-});
 
 
 app.get('/articles/:articleName', function (req, res) {
