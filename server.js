@@ -167,7 +167,7 @@ app.get('/get-articles', function(req, res){
       if(err){
           res.status(500).send(err.toString());
       } else {
-          res.send(JSON.stringify(resilt.rows));
+          res.send(JSON.stringify(result.rows));
       }
    });
     
