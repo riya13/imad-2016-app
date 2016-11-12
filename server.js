@@ -186,28 +186,58 @@ app.get('/get-comments/:articleName', function(req, res){
     
 });
 
-
-
+app.post('/submit-comment/:articleName', function(req, res){
+   
+   //check if the user is logged in
+   if(req.session && req.session.auth && req.session.auth.userId) {
+       
+       pool.query('SELECT * FROM article WHERE title = $1', [req.params.articleName], function(err, result){
+          if(err){
+              res.status(500).send(err.toString());
+          } else {
+              if(result.rows.length === 0) {
+                  res.status(400).send('Article not found');
+                  
+              }else {
+                  var articleId = result.rows[0].id;
+                  
+                  //inserting comment
+                  
+                  pool.query("INSERT INTO comment (comment, article_id, user_id) VALUES ($1, $2, $3)", [req.body.comment, articleId, req.session.auth.userId], function(err, result){
+                     if (err) {
+                        res.status(500).send(err.toString());
+                     } else {
+                                res.status(200).send('Comment inserted!');
+                            } 
+                  });
+                  
+              }
+          }
+       });
+       
+       
+   }else{
+       res.status(403).send('Only logged in users can comment!');
+   }
+   
+    
+});
 
 app.get('/articles/:articleName', function (req, res) {
-  // articleName == article-one
-  // articles[articleName] == {} content object for article one
+  // SELECT * FROM article WHERE title = '\'; DELETE WHERE a = \'asdf'
   
-  pool.query("SELECT * FROM article WHERE title = $1" , [req.params.articleName] , function(err, result){
-      if(err){
-          res.status(500).send(err.toString());
-      }
-      else {
-          if(result.rows.length === 0){
-              res.status(404).send('Article not found.');
-          }
-          else{
-              var articleData = result.rows[0];
-              res.send(createTemplate(articleData));
-          }
-      }
+   pool.query("SELECT * FROM article WHERE title = $1", [req.params.articleName], function (err, result) {
+    if (err) {
+        res.status(500).send(err.toString());
+    } else {
+        if (result.rows.length === 0) {
+            res.status(404).send('Article not found');
+        } else {
+            var articleData = result.rows[0];
+            res.send(createTemplate(articleData));
+        }
+    }
   });
-  
 });
 
 app.get('/ui/style.css', function (req, res) {
@@ -218,8 +248,8 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+app.get('/ui/my_logo.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'my_logo.png'));
 });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
