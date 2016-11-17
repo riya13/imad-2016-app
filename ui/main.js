@@ -1,22 +1,16 @@
-//logging form
-function loadLoginForm(){
+function loadLoginForm () {
     var loginHtml = `
-    <h3> Login/Register </h3>
-    <input type = "text" id = "username" placeholder = "username" />
-    <input type = "password" id = "password" />
-    
-    <br /> <br />
-    
-    <input type="submit" id="login_btn" value="Login" />
-    <input type="submit" id="submit_btn" value="Register" />
-    
-    `;
+        <h3>Login/Register to unlock awesome features</h3>
+        <input type="text" id="username" placeholder="username" />
+        <input type="password" id="password" />
+        <br/><br/>
+        <input type="submit" id="login_btn" value="Login" />
+        <input type="submit" id="register_btn" value="Register" />
+        `;
     document.getElementById('login_area').innerHTML = loginHtml;
-}
-
-//submit username/password to login
-
- var submit = document.getElementById('login_btn');
+    
+    // Submit username/password to login
+    var submit = document.getElementById('login_btn');
     submit.onclick = function () {
         // Create a request object
         var request = new XMLHttpRequest();
@@ -41,7 +35,7 @@ function loadLoginForm(){
           // Not done yet
         };
         
-         // Make the request
+        // Make the request
         var username = document.getElementById('username').value;
         var password = document.getElementById('password').value;
         console.log(username);
@@ -50,7 +44,7 @@ function loadLoginForm(){
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
         submit.value = 'Logging in...';
-    
+        
     };
     
     var register = document.getElementById('register_btn');
@@ -72,7 +66,7 @@ function loadLoginForm(){
           }
         };
         
-         // Make the request
+        // Make the request
         var username = document.getElementById('username').value;
         var password = document.getElementById('password').value;
         console.log(username);
@@ -142,5 +136,4 @@ loadLogin();
 
 // Now this is something that we could have directly done on the server-side using templating too!
 loadArticles();
-
 
