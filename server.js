@@ -7,21 +7,20 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 
 var config = {
-  user: 'riya13',
-  database: 'riya13',
-  host: 'db.imad.hasura-app.io',
-  port: '5432',
-  password: process.env.DB_PASSWORD
+    user: 'riya13',
+    database: 'riya13',
+    host: 'db.imad.hasura-app.io',
+    port: '5432',
+    password: process.env.DB_PASSWORD
 };
 
 var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
 app.use(session({
-    secret : 'some-super-confidential-secret-token',
-    cookie : {maxAge : 1000 * 60 * 60 * 24 * 30}
+    secret: 'someRandomSecretValue',
+    cookie: { maxAge: 1000 * 60 * 60 * 24 * 30}
 }));
-
 
 function createTemplate (data) {
     var title = data.title;
@@ -53,8 +52,7 @@ function createTemplate (data) {
               <div>
                 ${content}
               </div>
-              
-              <hr />
+              <hr/>
               <h4>Comments</h4>
               <div id="comment_form">
               </div>
@@ -63,16 +61,13 @@ function createTemplate (data) {
               </div>
           </div>
           <script type="text/javascript" src="/ui/article.js"></script>
-              
-          </div>
       </body>
     </html>
     `;
     return htmlTemplate;
 }
 
-
- app.get('/', function (req, res) {
+app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
@@ -205,7 +200,7 @@ app.post('/submit-comment/:articleName', function (req, res) {
                             if (err) {
                                 res.status(500).send(err.toString());
                             } else {
-                                res.status(200).send('Comment inserted!');
+                                res.status(200).send('Comment inserted!')
                             }
                         });
                 }
