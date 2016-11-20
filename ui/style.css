@@ -57,16 +57,14 @@ body {
     color: black;
     font-family: 'EB Garamond';
     font-size: 30px;
+    font-weight: bolder;
 }
 
 .picture {
     height:300px;
-    width:300px;
-    border-radius: 100%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position:center;
-    background-image: url('https://scontent.fbom1-1.fna.fbcdn.net/v/t1.0-9/13331148_611788192304299_7631846119051047470_n.jpg?oh=96d6648b204e6732a96b5274092d467d&oe=58887A9D');
+    width:500px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 .bg-3 {
@@ -74,6 +72,12 @@ body {
     color: #333399;
     font-family: 'EB Garamond';
     font-size: 30px;
+}
+
+.bg-4 {
+  background-color: #f2f2f2;
+  font-family: 'EB Garamond';
+  font-size: 30px;
 }
 
 footer .glyphicon {
@@ -120,4 +124,3 @@ footer .glyphicon {
         -webkit-transform: translateY(0%);
     }
 }
-
