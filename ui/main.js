@@ -3,7 +3,7 @@ function loadLoginForm () {
         <h3>Login/Register to unlock awesome features</h3>
         <br />
         <input type="text" id="username" placeholder="username" />
-        <input type="password" id="password" />
+        <input type="password" id="password" placeholder="password" />
         <br/><br/>
       
         
