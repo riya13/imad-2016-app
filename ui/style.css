@@ -1,92 +1,123 @@
 body {
-  margin: 0;
-  padding:0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'EB Garamond';
 }
 
-.container {
-  height:600px;
-  width:100%;
-  background-color: #e75b4c; 
+.navbar {
+    margin-bottom: 0 !important;
+    background-color: #e75b4c !important;
+    border: 0 !important;
+    font-size: 12px !important;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
 }
 
-.logo {
-  float:left;
-  width:10%;
-  margin-left:60px;
-  }
-
-.logo p {
-  color:white;
-  font-size: 20px;
-  height: 24px;
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
 }
 
-.nav {
-  width:30%;
-  float:right;
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
 }
 
-.nav ul li{
-  display: inline-block;
-  font-size: 14px;
-  list-style: none;
-  color: #fffaf0;
-  font-family: inherit;
-  padding: 10px;
-  }
-
-  .nav ul li a {
-    text-decoration: none;
-    color: #fffaf0;
-  }
-
-.main {
-  width:50%;
-  margin-left: 50px;
-  margin-top: 100px;
-  position:absolute;
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
 }
 
-.main p {
-  color: white;
+.container-fluid {
+    padding: 200px 50px !important;
+}
+
+.bg-1 {
+  background-color: #e75b4c;
+  color:  #fffaf0;
+}
+
+.font1 {
   font-family: 'EB Garamond';
   font-size: 90px;
 }
 
-#desc {
+.font2 {
   font-size: 60px;
   color:#f2f2f2;
-  margin-top:-110px;
+  font-family: 'EB Garamond';
 }
 
-.and {
+.font3 {
   font-family: 'Quintessential', cursive;
 }
 
-.content {
-  height: 600px;
-  width: 100%;
-  background-color: #f2f2f2;
+.bg-2 {
+    background-color: #f2f2f2;
+    color: black;
+    font-family: 'EB Garamond';
+    font-size: 30px;
 }
 
 .picture {
-  height:300px;
-  width:300px;
-  border-radius: 100%;
-  margin-left: 150px;
-  margin-top: 150px;
-  position:absolute;
-  background-image: url('https://scontent.fbom1-1.fna.fbcdn.net/v/t1.0-9/13241327_606108772872241_6760825653782625519_n.jpg?oh=7702548f4675b6ca2a28ae7c493fa1f3&oe=58C3D17E');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position:center;
+    height:300px;
+    width:300px;
+    border-radius: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-image: url('riya.jpg');
 }
 
-.myself {
-  height:450px;
-  width:700px;
-  margin-left: 550px;
-  margin-top:100px;
-  position:absolute;
+.bg-3 {
+    background-color: white; /* Green */
+    color: #333399;
+    font-family: 'EB Garamond';
+    font-size: 30px;
 }
+
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color:  #e75b4c;
+}
+
+.bg-4 {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
