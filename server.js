@@ -41,7 +41,7 @@ function createTemplate (data) {
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       </head> 
       <body>
-          <div class="container">
+          <div class="container bg-1">
               <div>
                   <a href="/">Home</a>
               </div>
