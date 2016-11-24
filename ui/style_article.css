@@ -1,8 +1,9 @@
 .bg-1 {
     background-color: black;
+    color:white;
 }
 
 .container-fluid {
     padding: 150px 50px;
-    color:white;
+    
 }
