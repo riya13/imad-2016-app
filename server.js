@@ -41,28 +41,28 @@ function createTemplate (data) {
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       </head> 
       <body>
-          <div class="container-fluid bg-1">
-              <div>
+         
+              <div class="container-fluid bg-1">
                   <a href="/">Home</a>
               </div>
               <hr/>
               <h3>
                   ${heading}
               </h3>
-              <div>
+              <div class="container-fluid bg-1">
                   ${date.toDateString()}
               </div>
-              <div>
+              <div class="container-fluid bg-2">
                 ${content}
               </div>
               <hr/>
               <h4>Comments</h4>
-              <div id="comment_form">
+              <div id="comment_form" class="container-fluid bg-3">
               </div>
               <div id="comments">
                 <center>Loading comments...</center>
               </div>
-          </div>
+         
           <script type="text/javascript" src="/ui/article.js"></script>
       </body>
     </html>
