@@ -103,6 +103,11 @@ footer .glyphicon {
     color:  #e75b4c;
 }
 
+bg-5 {
+    padding-top:20px !important;
+    padding-bottom:20px !important;
+}
+
 
 .slideanim {visibility:hidden;}
 .slide {
