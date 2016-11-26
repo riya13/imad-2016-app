@@ -109,6 +109,19 @@ footer .glyphicon {
     padding-bottom:20px !important;
 }
 
+.fa-facebook-official:hover {
+    color:#3f51b5;
+}
+
+.fa-snapchat:hover{
+    color: #d2be0e;
+  
+}
+
+.fa-github:hover {
+    color: #9c27b0;
+}
+
 
 .slideanim {visibility:hidden;}
 .slide {
