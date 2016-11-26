@@ -11,50 +11,9 @@ function loadLoginForm () {
         <input type="submit" id="login_btn" value="Login" />
         <input type="submit" id="register_btn" value="Register" /> 
         
-        
-  
-/*
-<div class="container">
-  <h2>Horizontal form</h2>
-  <form class="form-horizontal">
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="email">Email:</label>
-      <div class="col-sm-10">
-        <input id="username" type="username" class="form-control" placeholder="Enter username">
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="pwd">Password:</label>
-      <div class="col-sm-10">          
-        <input id="password" type="password" class="form-control" id="pwd" placeholder="Enter password">
-      </div>
-    </div>
-    <div class="form-group">        
-      <div class="col-sm-offset-2 col-sm-10">
-        <div class="checkbox">
-          <label><input type="checkbox"> Remember me</label>
-        </div>
-      </div>
-    </div>
-    <div class="form-group">        
-      <div class="col-sm-offset-2 col-sm-10">
-        <input id="login_btn" type="submit" class="btn btn-default" value="Login" />
-      </div>
-    </div>
-    <div class="form-group">        
-      <div class="col-sm-offset-2 col-sm-10">
-        <input id="register_btn" type="submit" class="btn btn-default" value="Register" />
-      </div>
-    </div>
-  </form>
-</div>
-*/
  `;
 
-        
-        
-        /* 
-        */
+     
         
     document.getElementById('login_area').innerHTML = loginHtml;
     
