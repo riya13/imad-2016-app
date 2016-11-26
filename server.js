@@ -41,8 +41,9 @@ function createTemplate (data) {
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       </head> 
       <body>
+           <div class="container text-center">
          
-              <div class="container text-center">
+              <div>
                   <a href="/">Home</a>
               </div>
               <hr/>
@@ -62,6 +63,8 @@ function createTemplate (data) {
               <div id="comments">
                 <center>Loading comments...</center>
               </div>
+         
+          </div>      
          
           <script type="text/javascript" src="/ui/article.js"></script>
       </body>
