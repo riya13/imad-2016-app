@@ -90,9 +90,12 @@ body {
 }
 
 .bg-4 {
+  padding-top:20px !important;
+  padding-bottom:20px !important;
   background-color: #f2f2f2;
   font-family: 'EB Garamond';
   font-size: 20px;
+  color:#ffcc00;
 }
 
 footer .glyphicon {
@@ -101,10 +104,6 @@ footer .glyphicon {
     color:  #e75b4c;
 }
 
-.bg-4 {
-  color:#ffcc00;
-  
-}
 
 .slideanim {visibility:hidden;}
 .slide {
