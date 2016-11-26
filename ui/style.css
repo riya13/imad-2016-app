@@ -62,7 +62,8 @@ body {
 .about_me_text {
     font-size: 20px;
     font-weight:bold;
-     font-family: 'EB Garamond';
+    color: #4d4d4d;
+    font-family: 'Open Sans';
 }
 
 #make {
