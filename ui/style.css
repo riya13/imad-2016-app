@@ -59,8 +59,8 @@ body {
 
 .main_text {
   font-family: 'EB Garamond';
-  font-size: 45px;
-  font-weight:bold;
+  font-size: 40px;
+  font-weight:bolder;
   
 }
 
@@ -68,6 +68,7 @@ body {
     font-size: 20px;
     color: #808080;
     font-family:'Quintessential';
+    font-weight:bold;
 }
 
 #make {
