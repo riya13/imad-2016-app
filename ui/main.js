@@ -3,15 +3,15 @@ function loadLoginForm () {
        
          
        
-        <i class="material-icons">face</i><input type="text" id="username" placeholder="Enter e-mail/username" />
+        <i class="material-icons">face</i> &nbsp <input type="text" id="username" placeholder="Enter e-mail/username" />
         <br/>
         <br/>
-        <i class="material-icons">fingerprint</i><input type="password" id="password" placeholder="Enter password" />
+        <i class="material-icons">fingerprint</i> &nbsp <input type="password" id="password" placeholder="Enter password" />
         <br/><br/>
       
         
-        <button style="background-color: #2bde73; color: white;" class="btn btn-default btn-lg" type="submit" id="login_btn"><span class="glyphicon glyphicon-user"></span> &nbsp Login</button>
-        <button style="background-color: #2bde73; color: white;" class="btn btn-default btn-lg" type="submit" id="register_btn"><span class="glyphicon glyphicon-ok"></span> &nbsp Register</button>
+        <button style="background-color: #b3b3ff; color: white;" class="btn btn-default btn-lg" type="submit" id="login_btn"><span class="glyphicon glyphicon-user"></span> &nbsp Login</button>
+        <button style="background-color: #b3b3ff; color: white;" class="btn btn-default btn-lg" type="submit" id="register_btn"><span class="glyphicon glyphicon-ok"></span> &nbsp Register</button>
 
  `;
 
