@@ -59,6 +59,11 @@ body {
     font-weight: bolder;
 }
 
+.main-text {
+  font-family: 'EB Garamond';
+  font-size: 40px;
+}
+
 .about_me_text {
     font-size: 20px;
     font-weight:bold;
