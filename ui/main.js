@@ -2,7 +2,7 @@ function loadLoginForm () {
     var loginHtml = `
        
          
-        <br />
+       
         <i class="material-icons">face</i><input type="text" id="username" placeholder="Enter e-mail/username" />
         <br/>
         <br/>
