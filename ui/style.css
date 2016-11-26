@@ -110,7 +110,7 @@ footer .glyphicon {
  }
 
 .fa {
-    font-size: 25px;
+    font-size: 25px !important;
 }
 
 .fa-facebook-official:hover {
