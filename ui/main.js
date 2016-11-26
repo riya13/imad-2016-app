@@ -1,17 +1,17 @@
 function loadLoginForm () {
     var loginHtml = `
        
-         <h3>Login/Register to unlock awesome features</h3>
+         
         <br />
         <input type="text" id="username" placeholder="Enter username" />
         <input type="password" id="password" placeholder="Enter password" />
         <br/><br/>
       
         
-        <button class="btn btn-default btn-lg" type="submit" id="login_btn"><span class="glyphicon glyphicon-user"></span> Login</button>
+        <button style="background-color: #9999ff; color: white;" class="btn btn-default btn-lg" type="submit" id="login_btn"><span class="glyphicon glyphicon-user"></span> Login</button>
         <button class="btn btn-default btn-lg" type="submit" id="register_btn"><span class="glyphicon glyphicon-user"></span> Register</button>
 
-        <input type="submit" id="register_btn" value="Register" /> 
+        
         
  `;
 
