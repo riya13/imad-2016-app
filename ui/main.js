@@ -38,12 +38,12 @@ function loadLoginForm () {
     </div>
     <div class="form-group">        
       <div class="col-sm-offset-2 col-sm-10">
-        <button id="login_btn" type="submit" class="btn btn-default">Submit</button>
+        <input id="login_btn" type="submit" class="btn btn-default" value="Submit" />
       </div>
     </div>
     <div class="form-group">        
       <div class="col-sm-offset-2 col-sm-10">
-        <button id="register_btn" type="submit" class="btn btn-default">Register</button>
+        <input id="register_btn" type="submit" class="btn btn-default" value="Register" />
       </div>
     </div>
   </form>
