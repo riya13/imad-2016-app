@@ -59,6 +59,10 @@ body {
     font-weight: bolder;
 }
 
+.about_me_text {
+    font-size: 20px;
+}
+
 #make {
     color:#e75b4c;
 }
