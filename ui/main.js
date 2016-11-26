@@ -1,6 +1,61 @@
 function loadLoginForm () {
     var loginHtml = `
-        <h3>Login/Register to unlock awesome features</h3>
+       
+        
+        
+        
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+</head>
+<body>
+
+<div class="container">
+  <h2>Horizontal form</h2>
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-10">
+        <input id="username" type="username" class="form-control" placeholder="Enter username">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <div class="col-sm-10">          
+        <input id="password" type="password" class="form-control" id="pwd" placeholder="Enter password">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button id="login_btn" type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button id="register_btn" type="submit" class="btn btn-default">Register</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+</body>
+</html> `;
+
+        
+        
+        /*  <h3>Login/Register to unlock awesome features</h3>
         <br />
         <input type="text" id="username" placeholder="username" />
         <input type="password" id="password" placeholder="password" />
@@ -8,9 +63,9 @@ function loadLoginForm () {
       
         
         <input type="submit" id="login_btn" value="Login" />
-        <input type="submit" id="register_btn" value="Register" />
+        <input type="submit" id="register_btn" value="Register" /> 
+        */
         
-        `;
     document.getElementById('login_area').innerHTML = loginHtml;
     
     // Submit username/password to login
