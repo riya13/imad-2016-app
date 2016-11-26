@@ -93,7 +93,7 @@ function loadLoginForm () {
 function loadLoggedInUser (username) {
     var loginArea = document.getElementById('login_area');
     loginArea.innerHTML = `
-        <h3> Hi <i>${username}</i></h3>
+        <h3> Hi &nbsp <i>${username}</i></h3>
         <a href="/logout">Logout</a>
     `;
 }
@@ -125,7 +125,7 @@ function loadArticles () {
                 var content = '<ul>';
                 var articleData = JSON.parse(this.responseText);
                 for (var i=0; i< articleData.length; i++) {
-                    content += `<li>
+                    content += `<li style="text-decoration:none">
                     <a href="/articles/${articleData[i].title}">${articleData[i].heading}</a>
                     (${articleData[i].date.split('T')[0]})</li>`;
                 }
