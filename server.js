@@ -29,154 +29,8 @@ function createTemplate (data) {
     var content = data.content;
     
     var htmlTemplate = `
-   
-   <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
     
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-
-    <title> ${title} </title>
-    
-     <!-- Custom CSS -->
-    <link href="/ui/style_article.css" rel="stylesheet">
-
-    <!-- Bootstrap Core CSS and JS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    
-    
-
- 
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Page Content -->
-    <div class="container">
-     <div class="row">
-
-            <!-- Blog Post Content Column -->
-            <div class="col-lg-8">
-
-                <!-- Blog Post -->
-
-                <!-- Title -->
-                <h1>  ${heading} </h1>
-
-                <!-- Author -->
-                <p class="lead">
-                    by <a href="#">Start </a>
-                </p>
-
-                <hr>
-
-                <!-- Date/Time -->
-                <p><span class="glyphicon glyphicon-time"></span>${date.toDateString()} </p>
-
-                <hr>
-
-                <!-- Preview Image -->
-                <img class="img-responsive" src="http://placehold.it/900x300" alt="">
-
-                <hr>
-
-                <!-- Post Content -->
-                ${content}
-               
-
-                <hr>
-
-                <!-- Blog Comments -->
-
-                <!-- Comments Form -->
-                <div id="comment_form" class="well">
-                    
-                    
-                </div>
-
-                <hr>
-
-                <!-- Posted Comments -->
-                
-                <div id="comments">
-                    <center>Loading comments...</center>
-                </div>
-
-                
-                
-            </div>
-
-            
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-             <div class="col-lg-12">
-                    <p>Copyright &copy; </p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </footer>
-
-    </div>
-    <!-- /.container -->
-    
-    <script type="text/javascript" src="/ui/article.js"></script>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-</body>
-
-</html>
-  `;
-}
-    
-    /*
-     <html>
+    <html>
       <head>
           <title>
               ${title}
@@ -214,11 +68,13 @@ function createTemplate (data) {
           </div>  
            <script type="text/javascript" src="/ui/article.js"></script>
       </body>
-    </html> */
-         
+    </html> 
+ 
+        
+  `;
+}
     
-
-       
+   
                
 
 app.get('/', function (req, res) {
