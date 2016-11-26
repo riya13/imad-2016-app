@@ -42,7 +42,7 @@ function createTemplate (data) {
       </head> 
       <body>
          
-              <div class="container-fluid bg-1">
+              <div class="container text-center">
                   <a href="/">Home</a>
               </div>
               <hr/>
