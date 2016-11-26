@@ -59,6 +59,10 @@ body {
     font-weight: bolder;
 }
 
+#make {
+    color:#e75b4c;
+}
+
 .picture {
     height:300px;
     width:500px;
