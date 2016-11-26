@@ -4,6 +4,7 @@ function loadLoginForm () {
          
         <br />
         <i class="material-icons">face</i><input type="text" id="username" placeholder="Enter e-mail/username" />
+        <br/>
         <i class="material-icons">fingerprint</i><input type="password" id="password" placeholder="Enter password" />
         <br/><br/>
       
