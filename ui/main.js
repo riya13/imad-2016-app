@@ -2,8 +2,9 @@ function loadLoginForm () {
     var loginHtml = `
        
          
-       
-        <i class="material-icons">face</i> &nbsp <input type="text" id="username" placeholder="Enter e-mail/username" />
+        <div class="form-group">
+        <i class="material-icons">face</i> &nbsp <input type="text" id="username" placeholder=" Enter username" />
+        </div>
         <br/>
         <br/>
         <i class="material-icons">fingerprint</i> &nbsp <input type="password" id="password" placeholder="Enter password" />
