@@ -3,11 +3,11 @@ function loadLoginForm () {
        
          
         
-        <i class="material-icons">face</i> &nbsp <input type="text" id="username" placeholder=" Enter username" />
+        <i class="material-icons">face</i> &nbsp <input type="text" id="username" placeholder=" enter username" />
         
         <br/>
         <br/>
-        <i class="material-icons">fingerprint</i> &nbsp <input type="password" id="password" placeholder="Enter password" />
+        <i class="material-icons">fingerprint</i> &nbsp <input type="password" id="password" placeholder="enter password" />
         <br/><br/>
       
         
