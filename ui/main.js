@@ -10,7 +10,7 @@ function loadLoginForm () {
         <i class="material-icons">fingerprint</i> &nbsp <input type="password" id="password" style="padding:10px;" placeholder="enter password" />
         <br/><br/>
         
-        <button style="background-color: #9999ff; color: white;" class="btn btn-default btn-lg" type="submit" id="login_btn"><i class="material-icons">perm_identity</i> &nbsp Login</button>
+        <button style="background-color: #9999ff; color: white;" class="btn btn-default btn-lg" type="submit" id="login_btn"><i class="material-icons">perm_identity</i> &nbsp Login</button> &nbsp
         
         <button style="background-color: #9999ff; color: white;" class="btn btn-default btn-lg" type="submit" id="register_btn"><i class="material-icons">done</i> &nbsp Register</button>
 
