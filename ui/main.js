@@ -2,14 +2,17 @@ function loadLoginForm () {
     var loginHtml = `
        
          
-        
+        <form>
+        <div class="form-group">
         <i class="material-icons">face</i> &nbsp <input type="text" id="username" placeholder=" enter username" />
-        
+        </div>
         <br/>
         <br/>
+        <div class="form-group">
         <i class="material-icons">fingerprint</i> &nbsp <input type="password" id="password" placeholder="enter password" />
         <br/><br/>
-      
+        </div>
+        </form>
         
         <button style="background-color: #9999ff; color: white;" class="btn btn-default btn-lg" type="submit" id="login_btn"><i class="material-icons">perm_identity</i> &nbsp Login</button>
         
