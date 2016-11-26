@@ -3,10 +3,10 @@ function loadLoginForm () {
        
          
        
-        <i class="material-icons">face</i> &nbsp <input style="font-size:14px; font-family:'Open Sans'; border-radius:5%;" type="text" id="username" placeholder="Enter e-mail/username" />
+        <i class="material-icons">face</i> &nbsp <input style="font-size:14px; font-family:'Open Sans' padding:5px;" type="text" id="username" placeholder="Enter e-mail/username" />
         <br/>
         <br/>
-        <i class="material-icons">fingerprint</i> &nbsp <input type="password" id="password" placeholder="Enter password" />
+        <i class="material-icons">fingerprint</i> &nbsp <input style="font-size:14px; font-family:'Open Sans' padding:5px;" type="password" id="password" placeholder="Enter password" />
         <br/><br/>
       
         
