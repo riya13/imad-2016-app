@@ -38,7 +38,7 @@ function loadLoginForm () {
     </div>
     <div class="form-group">        
       <div class="col-sm-offset-2 col-sm-10">
-        <input id="login_btn" type="submit" class="btn btn-default" value="Submit" />
+        <input id="login_btn" type="submit" class="btn btn-default" value="Login" />
       </div>
     </div>
     <div class="form-group">        
