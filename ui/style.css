@@ -54,14 +54,13 @@ body {
 .bg-2 {
     background-color: #f2f2f2;
     color: black;
-    font-family: 'EB Garamond';
-    font-size: 30px;
-    font-weight: bolder;
+   
 }
 
 .main-text {
   font-family: 'EB Garamond';
   font-size: 40px;
+  font-weight: bolder;
 }
 
 .about_me_text {
@@ -89,10 +88,6 @@ body {
     font-size: 20px;
 }
 
-.login_text {
-    font-size:25px;
-    font-weight:bold;
-}
 
 .bg-4 {
   background-color: #f2f2f2;
