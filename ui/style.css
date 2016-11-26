@@ -82,7 +82,12 @@ body {
     color: #000033;
     font-family: 'EB Garamond';
     font-size: 20px;
-   
+    padding:5px;
+}
+
+.login_text {
+    font-size:30px;
+    font-weight:bold;
 }
 
 .bg-4 {
