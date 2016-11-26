@@ -122,10 +122,10 @@ function loadArticles () {
         if (request.readyState === XMLHttpRequest.DONE) {
             var articles = document.getElementById('articles');
             if (request.status === 200) {
-                var content = '<ul style="list-style:none">';
+                var content = '<ul style="list-style:none; color: #e6b800;">';
                 var articleData = JSON.parse(this.responseText);
                 for (var i=0; i< articleData.length; i++) {
-                    content += `<li style=" font-family: 'EB Garamond'; color: #e6b800;" >
+                    content += `<li style=" font-family: 'Quintessential'; " >
                     <a href="/articles/${articleData[i].title}">${articleData[i].heading}</a>
                     (${articleData[i].date.split('T')[0]})</li>`;
                 }
