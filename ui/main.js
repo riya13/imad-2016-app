@@ -8,7 +8,9 @@ function loadLoginForm () {
         <br/><br/>
       
         
-        <button class="btn btn-default btn-lg" type="submit" id="login_btn"><span class="glyphicon glyphicon-search"></span> Login </button>
+        <button class="btn btn-default btn-lg" type="submit" id="login_btn"><span class="glyphicon glyphicon-user"></span> Login</button>
+        <button class="btn btn-default btn-lg" type="submit" id="register_btn"><span class="glyphicon glyphicon-user"></span> Register</button>
+
         <input type="submit" id="register_btn" value="Register" /> 
         
  `;
