@@ -50,10 +50,10 @@ function createTemplate (data) {
               <h3>
                   ${heading}
               </h3>
-              <div class="container-fluid bg-1">
+              <div class="container bg-1">
                   ${date.toDateString()}
               </div>
-              <div class="container-fluid bg-2">
+              <div class="container bg-2">
                 ${content}
               </div>
               <hr/>
