@@ -8,8 +8,8 @@ function loadLoginForm () {
         <br/><br/>
       
         
-        <button style="background-color: #9999ff; color: white;" class="btn btn-default btn-lg" type="submit" id="login_btn"><span class="glyphicon glyphicon-user"></span> Login</button>
-        <button class="btn btn-default btn-lg" type="submit" id="register_btn"><span class="glyphicon glyphicon-user"></span> Register</button>
+        <button style="background-color: #6666ff; color: white;" class="btn btn-default btn-lg" type="submit" id="login_btn"><span class="glyphicon glyphicon-user"></span> Login</button>
+        <button style="background-color: #6666ff; color: white;" class="btn btn-default btn-lg" type="submit" id="register_btn"><span class="glyphicon glyphicon-user"></span> Register</button>
 
         
         
