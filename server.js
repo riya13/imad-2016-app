@@ -29,21 +29,16 @@ function createTemplate (data) {
     var content = data.content;
     
     var htmlTemplate = `
-    
     <html>
       <head>
           <title>
               ${title}
           </title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link href="/ui/style_article.css" rel="stylesheet" />
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+          <link href="/ui/style.css" rel="stylesheet" />
       </head> 
       <body>
-           <div>
-         
+          <div class="container">
               <div>
                   <a href="/">Home</a>
               </div>
@@ -51,38 +46,30 @@ function createTemplate (data) {
               <h3>
                   ${heading}
               </h3>
-              <div class="container bg-1">
+              <div>
                   ${date.toDateString()}
               </div>
-              <div class="container bg-2">
+              <div>
                 ${content}
               </div>
               <hr/>
               <h4>Comments</h4>
-              <div id="comment_form" class="container bg-3">
+              <div id="comment_form">
               </div>
               <div id="comments">
                 <center>Loading comments...</center>
               </div>
-         
-          </div>  
-           <script type="text/javascript" src="/ui/article.js"></script>
+          </div>
+          <script type="text/javascript" src="/ui/article.js"></script>
       </body>
-    </html> 
- 
-        
-  `;
+    </html>
+    `;
+    return htmlTemplate;
 }
-    
-   
-               
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-
-app.get('/ui/bootstrap.css', function (req, res) { res.sendFile(path.join(__dirname, 'ui', 'bootstrap.css')); });
-
 
 
 function hash (input, salt) {
@@ -213,7 +200,7 @@ app.post('/submit-comment/:articleName', function (req, res) {
                             if (err) {
                                 res.status(500).send(err.toString());
                             } else {
-                                res.status(200).send('Comment inserted!');
+                                res.status(200).send('Comment inserted!')
                             }
                         });
                 }
